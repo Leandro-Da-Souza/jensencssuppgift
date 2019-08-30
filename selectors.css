@@ -82,10 +82,28 @@ input[type='checkbox']:checked {
 
 /* 17. Ge alla p som är direkta barn till .container en font-weight på 700 */
 
+.container * p {
+    font-weight: 700px;
+}
+
 /* 18. Endast första listelementet i ul-listan ska få färg och font-size: 20px */
+ul li:first-child {
+    color: cyan;
+    font-size: 20px;
+}
 
 /* 19. Ge alla p som kommer direkt efter h2-elementet i den tredje div-en (class="third") en turkos bakgrundsfärg Tips: Adjacent sibling selector*/
+div[class='third'] h2 + p {
+    background-color: turquoise;
+}
 
 /* 20. Ge alla p som kommer efter h2-elementet i den trdje div-en (class="third") en vit färg #fff Tips: General sibling selector*/
+div[class='third'] h2 ~ p {
+    color: #fff;
+}
 
 /* 21. Ge den andra paragrafen i .contatinern en röd färg  font-size till 32px; (En utmaning...)*/
+.container p:nth-child(2) {
+    color: red;
+    font-size: 32px;
+}
