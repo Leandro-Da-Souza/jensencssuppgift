@@ -53,15 +53,32 @@ div {
 
 /* 11. Alla  <p> som ligger nästladee (inuti) en div ska ha font-size: 22px*/
 
+div p {
+    font-size: 22px;
+}
+
 /* 12. Ge alla em inuti en paragraf inuti den fjärde div-en med class="forth" en 'text-docration: underline;*/
+div[class='forth'] p em {
+    text-decoration: underline;
+}
 
 /* 13. Gör så att <h1> elementet får färgen blå när musen är över elementet (:hover) */
+h1:hover {
+    color: blue;
+}
 
 /* 14. Gör så att alla besökta <a> element får färgen grå (:visited) */
-
+a:visited {
+    color: gray;
+}
 /* 15. Alla inmatningsfält (input) av typ 'text' ska ha grå bakgrund */
-
+input[type='text'] {
+    background-color: grey;
+}
 /* 16. Alla checkboxrutor som är 'checked' ska får en vänstermarginal på 50px (margin-left: 50px) */
+input[type='checkbox']:checked {
+    margin-left: 50px;
+}
 
 /* 17. Ge alla p som är direkta barn till .container en font-weight på 700 */
 
